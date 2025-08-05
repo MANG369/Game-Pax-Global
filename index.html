@@ -2,83 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Peace Simulator</title>
-    <!-- Google Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Galactic Diplomacy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome (para los iconos) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Tu CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
 </head>
 <body>
-
     <div id="game-container">
-        <header>
-            <h1><i class="fas fa-globe-americas"></i> Global Peace Simulator</h1>
-            <p class="year-display">Año: <span id="year-value">2024</span></p>
-        </header>
-
-        <div id="global-stats">
-            <div class="stat">
-                <div class="stat-header">
-                    <i class="fas fa-dove"></i> <span>Paz Global</span>
-                </div>
-                <div class="progress-bar-container">
-                    <div id="peace-bar" class="progress-bar"></div>
-                </div>
-                <span id="peace-value">50%</span>
-            </div>
-            <div class="stat">
-                <div class="stat-header">
-                    <i class="fas fa-fire-flame-curved"></i> <span>Tensión Global</span>
-                </div>
-                <div class="progress-bar-container">
-                    <div id="tension-bar" class="progress-bar"></div>
-                </div>
-                <span id="tension-value">10%</span>
-            </div>
-        </div>
-
-        <main>
-            <div id="resources-bar">
-                <div class="resource-item">
-                    <i class="fas fa-sack-dollar"></i> Presupuesto: <span id="budget-value">1000</span>
-                </div>
-                <div class="resource-item">
-                    <i class="fas fa-handshake-angle"></i> Influencia: <span id="influence-value">50</span>
-                </div>
-            </div>
-
-            <div id="actions-panel">
-                <h2><i class="fas fa-tasks"></i> Proyectos Globales</h2>
-                <div id="projects-list">
-                    <!-- Las tarjetas de proyecto se generarán con JavaScript -->
-                </div>
-            </div>
-        </main>
-        
-        <div id="log-panel">
-            <h3><i class="fas fa-clipboard-list"></i> Registro de Eventos</h3>
-            <ul id="log-list">
-                <li>Juego iniciado. ¡El futuro del mundo está en tus manos!</li>
-            </ul>
+        <div id="loading-screen">
+            <div class="spinner"></div>
+            <p>Estableciendo Enlace Hiperlumínico...</p>
         </div>
     </div>
-
-    <!-- Modal para eventos aleatorios (mejorado) -->
-    <div id="event-modal" class="hidden">
-        <div class="modal-content">
-            <h2 id="event-title"></h2>
-            <p id="event-description"></p>
-            <div id="event-choices">
-                <!-- Los botones de elección se generarán aquí -->
-            </div>
-        </div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
